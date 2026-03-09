@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>System Explorer</title>
+
+<style>
+
+body{
+background:#1e1e1e;
+color:white;
+font-family:monospace;
+padding:40px;
+}
+
+.folder{
+cursor:pointer;
+margin-left:20px;
+}
+
+.hidden{
+display:none;
+}
+
+.file{
+color:#9cdcfe;
+margin-left:40px;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>System Files</h2>
+
+<div class="folder" onclick="toggle('f1')">📁 definitely_not_the_birthday_message</div>
+
+<div id="f1" class="hidden">
+
+<div class="folder" onclick="toggle('f2')">📁 nope_try_again</div>
+
+<div id="f2" class="hidden">
+
+<div class="folder" onclick="toggle('f3')">📁 maybe_here</div>
+
+<div id="f3" class="hidden">
+
+<div class="file" onclick="alert('Nice try Oogie 😄 This is not it.')">📄 message.txt</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="folder" onclick="toggle('f4')">📁 memories</div>
+
+<div id="f4" class="hidden">
+
+<div class="folder" onclick="toggle('f5')">📁 the_day_we_met</div>
+
+<div id="f5" class="hidden">
+
+<div class="file" onclick="alert('This was the day my life upgraded ❤️')">📄 note.txt</div>
+
+</div>
+
+</div>
+
+
+
+<div class="folder" onclick="toggle('f6')">📁 system_files</div>
+
+<div id="f6" class="hidden">
+
+<div class="folder" onclick="toggle('f7')">📁 do_not_open</div>
+
+<div id="f7" class="hidden">
+
+<div class="folder" onclick="toggle('f8')">📁 seriously_dont</div>
+
+<div id="f8" class="hidden">
+
+<div class="folder" onclick="toggle('f9')">📁 okay_you_opened_it</div>
+
+<div id="f9" class="hidden">
+
+<div class="file" onclick="showBirthday()">📄 open_this_oogie.txt</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<script>
+
+function toggle(id){
+var x=document.getElementById(id);
+if(x.style.display==="block"){
+x.style.display="none";
+}
+else{
+x.style.display="block";
+}
+}
+
+function showBirthday(){
+alert("Happy Birthday Oogie ❤️\n\nYou reached the end of the folders.\n\nJust like I hope we reach forever together.\n\nLove,\nDosa");
+}
+
+</script>
+
+</body>
+</html>
