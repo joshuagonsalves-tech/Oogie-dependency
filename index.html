@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>System Explorer</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="window">
+
+<div class="titlebar">
+System Explorer
+</div>
+
+<div class="explorer">
+
+<div class="item folder" onclick="openFolder('f1')">
+📁 definitely_not_the_birthday_message
+</div>
+
+<div id="f1" class="content">
+
+<div class="item folder" onclick="openFolder('f2')">
+📁 nope_try_again
+</div>
+
+<div id="f2" class="content">
+
+<div class="item file" onclick="showText('Nice try Oogie 😄 This is not it.')">
+📄 message.txt
+</div>
+
+</div>
+
+</div>
+
+
+<div class="item folder" onclick="openFolder('f3')">
+📁 memories
+</div>
+
+<div id="f3" class="content">
+
+<div class="item folder" onclick="openFolder('f4')">
+📁 the_day_we_met
+</div>
+
+<div id="f4" class="content">
+
+<div class="item file" onclick="showText('This was the day everything changed ❤️')">
+📄 note.txt
+</div>
+
+</div>
+
+</div>
+
+
+<div class="item folder" onclick="openFolder('f5')">
+📁 system_files
+</div>
+
+<div id="f5" class="content">
+
+<div class="item folder" onclick="openFolder('f6')">
+📁 do_not_open
+</div>
+
+<div id="f6" class="content">
+
+<div class="item folder" onclick="openFolder('f7')">
+📁 seriously_dont
+</div>
+
+<div id="f7" class="content">
+
+<div class="item folder" onclick="openFolder('f8')">
+📁 okay_you_opened_it
+</div>
+
+<div id="f8" class="content">
+
+<div class="item file" onclick="birthdayReveal()">
+📄 open_this_oogie.txt
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div id="popup" class="popup hidden">
+<div class="popup-box">
+<p id="popupText"></p>
+<button onclick="closePopup()">Close</button>
+</div>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
